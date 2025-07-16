@@ -5,7 +5,6 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
- 
 });
 
 function getDirection() {
@@ -105,4 +104,14 @@ var swiper = new Swiper(".mySwiper2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+$(".footer__more").click(function () {
+  let moreText = $(".footer__text");
+  if (moreText.css("max-height") === "max-content") {
+    moreText.css("max-height", "14rem");
+    $(this).text("مشاهده بیشتر");
+  } else {
+    moreText.css("max-height", "max-content");
+    $(this).text("بستن");
+  }
 });
