@@ -1,0 +1,9 @@
+.articles {
+  &__content {
+    &-text {
+      @include Responsive(phone) {
+        font-size: $fs-3;
+      }
+    }
+  }
+}

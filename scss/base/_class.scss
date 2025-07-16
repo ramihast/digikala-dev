@@ -1,0 +1,60 @@
+//* ---------------with project-------------
+.container2xl {
+  width: 80vw;
+  margin: auto;
+  @include Responsive(tablet) {
+        width: 98vw !important;
+      }
+}
+
+//* ---------------flex class-------------
+
+.flex-center {
+  @include centerizetag();
+}
+.flex-between {
+  @include centerizetag($justify: space-between);
+}
+.flex-around {
+  @include centerizetag($justify: space-around);
+}
+
+//* ---------------position class-------------
+
+.position-center {
+  @include positioncenter();
+}
+//* ---------------fontsize class-------------
+.fs-1 {
+  font-size: $fs-1;
+}
+.fs-2 {
+  font-size: $fs-2;
+}
+.fs-3 {
+  font-size: $fs-3;
+}
+.fs-4 {
+  font-size: $fs-4;
+}
+.fs-5 {
+  font-size: $fs-5;
+}
+.fs-6 {
+  font-size: $fs-6;
+}
+.text-justify {
+  text-align: justify;
+}
+
+//* ---------------ellipsis class-------------
+
+.ellipsis-1 {
+  @include linebreak(1);
+}
+.ellipsis-2 {
+  @include linebreak();
+}
+.ellipsis-3 {
+  @include linebreak(3);
+}

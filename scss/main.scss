@@ -1,0 +1,42 @@
+//* ---------------utilities-------------
+
+@import "utilities/functions";
+@import "utilities/variables";
+@import "utilities/mixin";
+
+//* ---------------bootstrap-------------
+
+@import "custom";
+
+//* ---------------base-------------
+
+@import "base/typography";
+@import "base/default";
+@import "base/class";
+
+//* ---------------vendors-------------
+
+//* ---------------themes-------------
+
+//* ---------------layouts-------------
+@import "layout/header";
+@import "layout/story";
+@import "layout/slider";
+@import "layout/brands";
+@import "layout/scroll";
+@import "layout/supermarket";
+@import "layout/category";
+@import "layout/suggest";
+@import "layout/digiclub";
+@import "layout/direct";
+@import "layout/digiplus";
+@import "layout/buy";
+@import "layout/mostsell";
+@import "layout/articles";
+@import "layout/footer";
+@import "layout/phone";
+//* ---------------components-------------
+
+//* ---------------pages-------------
+
+@import "pages/home";

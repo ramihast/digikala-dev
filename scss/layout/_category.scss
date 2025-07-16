@@ -1,0 +1,11 @@
+.category {
+  &__item {
+    min-width: 16rem;
+    &-img {
+      min-width: 12rem;
+      max-width: 13rem;
+      height: auto;
+      margin: 0.5rem;
+    }
+  }
+}

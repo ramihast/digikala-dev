@@ -1,0 +1,25 @@
+.digiplus {
+  &__content {
+    @include Responsive(tablet) {
+      border-radius: 0 !important;
+      &-img {
+        @include Responsive(tablet) {
+          position: static !important;
+        }
+      }
+    }
+    &-col {
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-pic {
+      @include Responsive(tablet) {
+        width: 50% !important;
+      }
+      @include Responsive(phonel) {
+        width: 75% !important;
+      }
+    }
+  }
+}

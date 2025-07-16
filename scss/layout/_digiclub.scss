@@ -1,0 +1,45 @@
+.digiclub {
+  &__line {
+    @include Responsive(tablet) {
+      border-radius: 0 !important;
+    }
+    background: linear-gradient(
+      to right,
+      #60e1e8,
+      #58b3c8 40%,
+      #0c7ea2 80%,
+      #1b67b7
+    );
+  }
+  &__item {
+    height: 7.5rem;
+  }
+  &__content {
+    &-col {
+      @include Responsive(phoneL) {
+        width: 100% !important;
+        @include centerizetag();
+      }
+    }
+    &-img {
+      @include Responsive(phoneL) {
+        width: 20% !important;
+      }
+      @include Responsive(phone) {
+        width: 50% !important;
+      }
+    }
+    &-item {
+      @include Responsive(phone) {
+        border-radius: 2rem !important;
+      }
+      
+    }
+    &-text{
+      @include Responsive(phone) {
+        font-size: 2.25rem !important;
+      }
+      
+    }
+  }
+}

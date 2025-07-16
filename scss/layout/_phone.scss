@@ -1,0 +1,6 @@
+.phone {
+  z-index: 5;
+  @include Responsive(tablet) {
+    display: flex !important;
+  }
+}

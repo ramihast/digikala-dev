@@ -1,0 +1,48 @@
+* {
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  //!   10px
+
+  @include Responsive(tablet) {
+    font-size: 56.25%;
+  }
+  //!   9px
+
+  @include Responsive(phoneL) {
+    font-size: 50%;
+  }
+  //!   8px
+
+  @include Responsive(phone) {
+    font-size: 35%;
+  }
+  //!   7px
+}
+
+/* 
+!0-576px= Phone
+!576px-768px= Phone Landscape
+!768px-992px= Tablet Portrait
+!992px-1200px= Tablet Landscape
+!1200px - 1800px= Laptop
+!1800px > = Big Desktop
+*/
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+:root {
+  --bs-body-bg: #fff;
+}
+body {
+  --bs-body-font-size: 1.6rem;
+  --bs-body-color: #101010;
+  --bs-body-font-family: IranSansWeb, "sans-serif";
+}

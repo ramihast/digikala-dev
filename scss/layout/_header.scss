@@ -1,0 +1,29 @@
+.header {
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.3);
+  &__search {
+    &-input {
+      width: 35vw;
+      @include Responsive(tablet) {
+        width: 100% !important;
+        outline: none;
+      }
+    }
+    &-line {
+      width: 0.2rem;
+      height: 2.5rem;
+      background-color: gray;
+    }
+    &-box {
+      @include Responsive(tablet) {
+        width: 100% !important;
+        padding: 1rem 0 !important;
+      }
+    }
+  }
+  &__banner {
+    @include Responsive(tablet) {
+      object-fit: cover;
+      min-height: 40px;
+    }
+  }
+}

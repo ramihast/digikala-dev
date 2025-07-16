@@ -1,0 +1,7 @@
+.direct {
+  &__img {
+    @include Responsive(phone) {
+      width: 100% !important;
+    }
+  }
+}
