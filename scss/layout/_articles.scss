@@ -1,8 +1,11 @@
 .articles {
   &__content {
+    @include Responsive(tablet) {
+      margin-bottom: 12rem;
+    }
     &-text {
       @include Responsive(phone) {
-        font-size: $fs-3;
+        font-size: $fs-5;
       }
     }
   }
