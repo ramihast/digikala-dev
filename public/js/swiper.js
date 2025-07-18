@@ -1,18 +1,10 @@
 var swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
-  direction: getDirection(),
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
-
-function getDirection() {
-  var windowWidth = window.innerWidth;
-  var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
-
-  return direction;
-}
 
 function myPlugin({ swiper, extendParams, on }) {
   extendParams({
